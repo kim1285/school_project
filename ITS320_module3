@@ -1,0 +1,19 @@
+ferrari_price = {
+    18500: range(1962, 1965),
+    6000: range(1965, 1969),
+    12000: range(1969, 1972),
+    48000: range(1972, 1976),
+    200000: range(1976, 1981),
+    650000: range(1981, 1986),
+    35000000: range(1986, 2013),
+    52000000: range(2013, 2015)
+}
+
+model_year = int(input("Enter your Ferrari model year: "))
+
+for price, years in ferrari_price.items():
+    if model_year in years:
+        print(f"The price of a Ferrari from {model_year} is {price:,}")
+        break
+    else:
+        print("Sorry, we don't have pricing information for that year.")
