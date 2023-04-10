@@ -1,0 +1,6 @@
+# reads two integers from the user
+int1, int2 = int(input("Enter the first integer: ")), int(input("Enter the second integer: "))
+#  prints floor division, division, modulo division.
+print(int1 // int2)
+print(int1 / int2)
+print(int1 % int2)
