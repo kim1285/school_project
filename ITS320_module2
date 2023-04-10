@@ -1,0 +1,7 @@
+S = input("write less then 50 characters")
+
+print(any(A.isalnum() for A in S))
+print(any(A.isalpha() for A in S))
+print(any(A.isdigit() for A in S))
+print(any(A.islower() for A in S))
+print(any(A.isupper() for A in S))
